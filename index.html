@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <div class="main">
+    <div class="container">
+      <p>Password Generator</p>
+      <div class="wrapper">
+        <div class="input-box">
+          <input disabled id="password" type="text" />
+          <span id="CopyPassword">
+            📋
+        </div>
+        <div class="pass-settings">
+          <p class="title">Password Settings</p>
+          <div class="input-length">
+            <label for="length">Password length</label>
+            <input value="8" id="length" type="number" />
+          </div>
+          <ul class="options">
+            <li class="option">
+              <input id="lowercase" type="checkbox" />
+              <label for="lowercase">Lowercase (a-z)</label>
+            </li>
+            <li class="option">
+              <input id="uppercase" type="checkbox" />
+              <label for="uppercase">Uppercase (A-Z)</label>
+            </li>
+            <li class="option">
+              <input id="numbers" type="checkbox" />
+              <label for="numbers">Numbers (0-9)</label>
+            </li>
+            <li class="option">
+              <input id="symbols" type="checkbox" />
+              <label for="symbols">Symbols (!@#$...)</label>
+            </li>
+          </ul>
+        </div>
+        <div id="err" class="err-popup">
+        </div>
+        <button id="generate" class="generate-btn">
+          Generate Password
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="author">
+    <a target="_blank" href="https://github.com/shivalalprasad">
+      <div class="author__avatar">
+        <img src="https://lh3.googleusercontent.com/a-/ALV-UjVWiZvl4arIC_RXS-FF7nLMIfLKUCy-e4lKm9h57F8gojVzSpKI4RpNgwloAW9C5qWoVw23edjmFu617RMNjY0r2HgyADl-cVw_4lSghKcWY0B6NbUHNFOr4gzITOtN29egAS8KsI2vdf5bBimyAWIrKTuFPreDgdzd7xW6x7EHDrrd13UIOCxYLffPWHB73h6_OJbJ68wJOBOIxdmcewT0THRokKiov6tvZBWIIG0BFlwRGAWRPmd-AAvUhE9spSDv9Q3A5O3DRQ1A_EF2vLxFWM7YIRW6b4qCcrNMbkMSE5kv16fjht1DdpMpHop0WE_jcvnx7wAYjZH3pQJy0fL5v8VVsF3ABvDG9HE_iEzQM9h__8H1tDnZdealTyfyIRnTWpX5mem0aE9G_hkjjSWYgVawUZMUOOYmVG_fbkCBGrAP8VqHC_CSHl1ZRxS7ajKyvkPT2HKngyjWw8u_FmXj6uVhLy_oAl07HnXRF9bn4OBvpCsdBX9rCXiCqh2fXRx5wdQYSrHac06SOTPXu1DGl3EZa4MBxG-rZmq8guWRsWfjh6r6NBntYuGxR1MtTRL7KwLN7HjLTH9HrQhomLn6Xw0XwvgZLK99uTqGOLzt_euW1iba5RwctagQzZ97pkrZC8Nwla3s8FODYkIO5FW2YwXJxcAROM4QzCQshggCPfe_fUb97BusSxfAvX9s7jpfct0ABoWSZcwvdfOdbs3vT3ZRpdv3yo3HhNP7uicgiGQ1OCuRVKH86TNi2-OFbYq0vwdajItNwZB8zHIIVTKTixxj0KBp_Gb6Mz1wRu89yWgXyvH7WQvTPtfAAWz-2nTShzqYk4R2q8-JyQy_0LT-ojW7EzzNIdiIJef3EOzkmRU5ujWo5rYPNGVKKbBCM5ZJ6HxRYGJgEQ5Y_mJGmajYaSJnFab7SZusiwEvQZSOAxcFiHI2i0Ycw7npt-vITNyqsE0j8d1ZOeEvX5E7Hpx58g=s96-c-rg-br100" alt="Shivalal Prasad"/>
+      </div>
+    </a>
+  </div>
+</body>
+
+</html>
