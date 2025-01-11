@@ -38,9 +38,10 @@ function displayError(message) {
   const errorMessageElement = createErrorMessage(message);
 
   document.getElementById("err").appendChild(errorMessageElement);
-
+  document.getElementById("generate").disabled = true;
   setTimeout(() => {
     errorMessageElement.remove();
+    document.getElementById("generate").disabled = false;
   }, 2000);
 }
 
