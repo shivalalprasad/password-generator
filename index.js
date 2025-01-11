@@ -28,7 +28,7 @@ function createErrorMessage(message) {
       <path d="m15.8333 5.34166-1.175-1.175-4.6583 4.65834-4.65833-4.65834-1.175 1.175 4.65833 4.65834-4.65833 4.6583 1.175 1.175 4.65833-4.6583 4.6583 4.6583 1.175-1.175-4.6583-4.6583z" fill="#393a37"></path>
     </svg>
   `;
-  closeButton.addEventListener('click', () => errorContainer.remove());
+  closeButton.addEventListener('click', () => {errorContainer.remove(); document.getElementById("generate").disabled = false;});
   errorContainer.appendChild(closeButton);
 
   return errorContainer;
@@ -39,7 +39,7 @@ function displayError(message) {
 
   document.getElementById("err").appendChild(errorMessageElement);
   document.getElementById("generate").disabled = true;
-  setTimeout(() => {
+  const wait = setTimeout(() => {
     errorMessageElement.remove();
     document.getElementById("generate").disabled = false;
   }, 2000);
